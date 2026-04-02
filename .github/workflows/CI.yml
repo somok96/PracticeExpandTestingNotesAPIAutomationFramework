@@ -77,10 +77,5 @@ jobs:
                 Hi,
                 API Automation Framework has been executed. The Report has been published
                 and the url is: https://github.com/somok96/PracticeExpandTestingNotesAPIAutomationFramework/
-
-
-
-
-        
-        path: target/surefire-reports
-        retention-days: 10
+          path: target/surefire-reports
+          retention-days: 10
