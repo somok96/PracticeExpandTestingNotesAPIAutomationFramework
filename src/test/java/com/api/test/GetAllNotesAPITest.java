@@ -20,7 +20,7 @@ public class GetAllNotesAPITest {
 				.statusCode(200)
 				.body("success", Matchers.equalTo(true))
 				.body("data", Matchers.notNullValue())
-				.log().body();
+				.log().body(); //logs 
 	}
 	}
 		
