@@ -78,5 +78,5 @@ jobs:
         body: | 
           Hi,
           API Automation Framework has been executed. The Report has been published
-          and the url is: https://github.com/somok96/PracticeExpandTestingNotesAPIAutomationFramework/
+          and the url is: https://somok96.github.io/PracticeExpandTestingNotesAPIAutomationFramework/
          
