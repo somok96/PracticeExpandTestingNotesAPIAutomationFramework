@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Suite" verbose="1">
+	<test name="Note Creation E2E Functionality Test">
+		<classes>
+			<class name="com.api.test.RegisterAPITest" />
+			<class name="com.api.test.LoginAPITest" />
+			<class name="com.api.test.GetAllNotesAPITest" />
+			<class name="com.api.test.CreateNoteAPITest" />
+			<class name="com.api.test.GetAllNotesAPITest" />
+		</classes>
+	</test>
+</suite>

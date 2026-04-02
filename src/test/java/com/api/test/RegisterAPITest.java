@@ -18,7 +18,7 @@ public class RegisterAPITest {
 
 	@BeforeMethod(description = "Setting up the Registration pre-requisites of the user")
 	public void setup() {
-		userPayload = new User("Somok", "Slice@1996", "t11@yopmail.com");
+		userPayload = new User("Somok", "Slice@1996", "t13@yopmail.com");
 	}
 
 	@Test(description = "Verify if the customer is able to register using the RegisterAPI and should return success message", groups = {

@@ -13,15 +13,11 @@ public class GetAllNotesAPITest {
 
 	@Test
 	public void verifyAllNotesAreFetched() {
-		
-		for(int i=0; i<=100;i++) {
+
 		RestAssured.given().baseUri(ConfigManager.getProperty("BASE_URI")).contentType(ContentType.JSON)
 				.header("x-auth-token", AuthTokenProvider.getToken()).log().headers().when().get("/notes").then()
-				.statusCode(200)
-				.body("success", Matchers.equalTo(true))
-				.body("data", Matchers.notNullValue())
-				.log().body(); //logs 
+				.statusCode(200).body("success", Matchers.equalTo(true)).body("data", Matchers.notNullValue()).log()
+				.body(); // logs
 	}
-	}
-		
+
 }
