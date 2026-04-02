@@ -61,6 +61,8 @@ jobs:
       uses: actions/upload-artifact@v6.0.0
       with:
         name: Surefire Reports
+        path: target/surefire-reports
+        retention-days: 10
         
     - name: Send Email Notification
       if: always()
@@ -77,5 +79,4 @@ jobs:
                 Hi,
                 API Automation Framework has been executed. The Report has been published
                 and the url is: https://github.com/somok96/PracticeExpandTestingNotesAPIAutomationFramework/
-          path: target/surefire-reports
-          retention-days: 10
+         
